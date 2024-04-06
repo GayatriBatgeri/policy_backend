@@ -1,0 +1,33 @@
+{
+  "name": "gayatri-node-ass-12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
+    "start-frontend": "cross-env-shell cd react-frontend && npm start",
+    "start-backend": "cross-env-shell cd backend && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.6.5",
+    "nodemon": "^3.0.3",
+    "password-validator": "^5.3.0",
+    "path": "^0.12.7",
+    "sequelize": "^6.35.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
